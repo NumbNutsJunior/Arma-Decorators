@@ -17,9 +17,9 @@ if !(_allowRecompile) exitWith {};
 params [["_initAttribute", ""], ["_didJIP", false]];
 
 // Wait for all functions to be initalized
-if (!canSuspend) exitWith {[] spawn (call compile _fnc_scriptName)};
-if (_initAttribute isEqualTo "postInit") exitWith {[] spawn (call compile _fnc_scriptName)};
-waitUntil {!isNil "bis_fnc_init"};
+//if (!canSuspend) exitWith {[] spawn (call compile _fnc_scriptName)};
+//if (_initAttribute isEqualTo "postInit") exitWith {[] spawn (call compile _fnc_scriptName)};
+//waitUntil {!isNil "bis_fnc_init"};
 
 // Master configs and default decorator tag
 private _configs = [configFile, campaignConfigFile, missionConfigFile];

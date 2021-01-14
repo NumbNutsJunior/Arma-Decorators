@@ -1,4 +1,4 @@
-#define POST_INIT postInit = 1;
+#define PRE_INIT preInit = 1;
 
 class CfgFunctions {
 
@@ -10,7 +10,7 @@ class CfgFunctions {
             class trackCalls {};
             class trackRuntime {};
 
-            class initDecorators {POST_INIT};
+            class initDecorators {PRE_INIT};
         };
 
 		class ClientConfig {
