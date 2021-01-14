@@ -1,0 +1,28 @@
+
+// Server Information
+author = "Pizza Man";
+OnLoadName = "Arma 3 Decorators";
+
+class Header {
+	gameType = Sandbox;
+	minPlayers = 1;
+	maxPlayers = 30;
+};
+
+// Server Settings
+respawn = BASE;
+respawndelay = 0;
+respawnDialog = 0;
+respawnButton = 0;
+disabledAI = true;
+joinUnassigned = 0;
+
+// Server Security
+compileFinalFunctions = true;
+allowFunctionsRecompile = true;
+
+// CFG
+#include "functions.hpp"
+#include "hud\common.hpp"
+#include "hud\dialog\dialog_master.hpp"
+#include "hud\rscTitles\rsc_titles_master.hpp"
