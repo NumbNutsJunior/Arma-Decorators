@@ -1,4 +1,11 @@
 
+// Author: Pizza Man
+// File: fn_initDecorators.sqf
+// Description: Re-compile all function libraries, implementing decorator semantics and new meta data.
+
+// NOTE: This is a function based highly off the game's default script compile function, 
+//       and so changes to the game's function library system may break the script.
+
 // Fetch mission config parameters
 private _allowRecompile = !((getNumber (missionConfigFile >> "allowFunctionsRecompile")) isEqualTo 0);
 private _compileFinal = !((getNumber (missionConfigFile >> "compileFinalFunctions")) isEqualTo 0);
